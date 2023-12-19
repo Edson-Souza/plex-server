@@ -7,10 +7,6 @@ services:
     expose:
       - 32400
       - 33400
-    # Descomentar si NO usas network_mode: "host"
-    # ports:
-    #  - 32400:32400
-    #  - 33400:33400
     environment:
       - TZ=America/Argentina/Mendoza
     volumes:
