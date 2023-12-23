@@ -14,7 +14,7 @@ services:
       - ${MEDIA}:/media
       - ${STORAGE}/tmp:/tmp
     restart: unless-stopped
-    network_mode: "host" # Solo funciona en Linux
+    network_mode: "host"
 
   transmission:
     image : jaymoulin/transmission:3.00-1.6.1
