@@ -17,7 +17,7 @@ services:
     network_mode: "host"
 
   transmission:
-    image : jaymoulin/transmission:3.00-1.6.1
+    image : linuxserver/transmission:4.0.5
     command: transmission-daemon -f -g /config
     volumes:
       - ./transmission:/config
