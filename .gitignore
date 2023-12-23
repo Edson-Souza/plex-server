@@ -13,3 +13,4 @@ flexget/*.sqlite
 transmission/dht.dat
 transmission/stats.json
 flexget/.config-lock
+transmission/bandwidth-groups.json
