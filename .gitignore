@@ -9,6 +9,7 @@ downloads/*
 *.log
 .DS_Store
 .env
+flexget/cached_resources
 flexget/*.sqlite
 flexget/.config-lock
 transmission/dht.dat
