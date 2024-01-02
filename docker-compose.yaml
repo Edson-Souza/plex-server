@@ -47,6 +47,7 @@ services:
     environment:
       - PUID=1001
       - PGID=1001
+      - TZ=America/Sao_Paulo
       - TORRENT_PLUGIN=transmission
       - FG_WEBUI_PASSWD=p3l4d0_N3RD
     restart: unless-stopped
