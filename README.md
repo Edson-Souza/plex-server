@@ -23,7 +23,7 @@ sudo vim /etc/default/docker
 export DOCKER_TMPDIR="/mnt/storage/docker-tmp"
 ```
 
-## Como rodar os serviços?
+## Como rodar o Plex?
 
 Modifique, se necessario, as variaveis de caminhos das midias em `.env` e depois execute o comando abaixo no terminal:
 
