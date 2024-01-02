@@ -29,6 +29,8 @@ Modifique, se necessario, as variaveis de caminhos das midias em `.env` e depois
 
 `docker-compose up -d`
 
+Use o link [localhost:32400/manege](localhost:32400/manege) para acessar o Plex.
+
 ## IMPORTANTE
 
 Se esta tendo travamentos e pausas no streaming de midia, pra corrigir isso devemos dizer ao Plex, que nao fazer o transcode pra poupar largura de banda, entao devemos configurar os Clientes Plex (sim, devemos fazer isso em cada Cliente) para que reproduza a midia na qualidade maxima (sem fazer transcode). No Android e iPhone, as configurações são muito similares, veja a screenshot do Cliente Android:
