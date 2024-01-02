@@ -28,7 +28,7 @@ templates:
 
 tasks:
   eztvrss:
-    rss: https://eztv.ag/ezrss.xml
+    rss: https://eztvx.to/ezrss.xml
     template: tv
     priority: 2
   sort_tv:
