@@ -19,6 +19,7 @@ templates:
       tv:
       - Reacher
       - Green Book
+      - Rick and Morty
 
     transmission:
       host: transmission
