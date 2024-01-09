@@ -1,0 +1,17 @@
+version: "3.7"
+
+services:
+
+  plex:
+    image: jaymoulin/plex:1.32.8.7639-amd64
+    expose:
+      - 32400
+      - 33400
+    environment:
+      - TZ=America/Sao_Paulo
+    volumes:
+      - ${STORAGE}/Plex Media Server:/root/Library/Application Support/Plex Media Server
+      - ${MEDIA}:/media
+      - ${STORAGE}/tmp:/tmp
+    restart: unless-stopped
+    network_mode: "host"
