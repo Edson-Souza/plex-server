@@ -1,17 +1,17 @@
-version: "3.7"
-
 services:
 
   plex:
-    image: jaymoulin/plex:1.32.8.7639-amd64
+    image: plexinc/pms-docker:1.40.1.8227-c0dd5a73e
+    container_name: my_plex
     expose:
       - 32400
       - 33400
     environment:
       - TZ=America/Sao_Paulo
     volumes:
-      - ${STORAGE}/Plex Media Server:/root/Library/Application Support/Plex Media Server
-      - ${MEDIA}:/media
-      - ${STORAGE}/tmp:/tmp
+      - ${MEDIA_Lenny}/Plex Media Server:/config/Library/Application Support/Plex Media Server
+      - ${MEDIA_Lenny}:/media/Lenny
+      - ${MEDIA_Famous}:/media/Famous
+      - ${MEDIA_Lenny}/tmp:/tmp
     restart: unless-stopped
     network_mode: "host"
