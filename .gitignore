@@ -1,17 +1,2 @@
-media/*
-plex/*
-.bash*
-.profile*
-.ssh*
-.vim*
-downloads/*
 .gitconfig
-*.log
-.DS_Store
 .env
-flexget/cached_resources
-flexget/*.sqlite
-flexget/.config-lock
-transmission/dht.dat
-transmission/stats.json
-transmission/bandwidth-groups.json
