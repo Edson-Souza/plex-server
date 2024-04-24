@@ -1,5 +1,0 @@
-FROM linuxserver/transmission:4.0.5
-
-RUN adduser edson -D && \
-    echo 'edson:edson' | chpasswd
-USER edson
