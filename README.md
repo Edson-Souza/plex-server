@@ -4,24 +4,7 @@ Este repositorio cria um servidor de streaming usando o Plex Media Server.
 
 ## Requerimentos
 
-Instalar Docker
-
-```
-curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
-sudo apt-key fingerprint 0EBFCD88
-echo "deb [arch=armhf] https://download.docker.com/linux/debian \
-     $(lsb_release -cs) stable" | \
-    sudo tee /etc/apt/sources.list.d/docker.list
-sudo apt update && sudo apt install -y --no-install-recommends docker-ce docker-compose
-```
-
-Modifique seu docker config para que guarde os temps no disco:
-
-```
-sudo vim /etc/default/docker
-# Add esta linha ao final com o caminho do docker-tmp dentro da pasta plex
-export DOCKER_TMPDIR="/mnt/storage/docker-tmp"
-```
+Instalar Docker.
 
 ## Local das midias
 
@@ -45,7 +28,7 @@ Execute o comando abaixo no terminal:
 
 `docker-compose up -d`
 
-Use o link [localhost:32400/manege](localhost:32400/manege) para acessar o Plex.
+Use o link [localhost:32400/manege](http://localhost:32400/manege) para acessar o Plex.
 
 ## IMPORTANTE
 
