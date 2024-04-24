@@ -1,6 +1,6 @@
 # Plex no Docker
 
-Este repositorio cria um servidor de streaming com capacidade para baixar conteudos de midia automaticamente, renomeando e movendo o arquivo para o diretorio de midia do plex.
+Este repositorio cria um servidor de streaming usando o Plex Media Server.
 
 ## Requerimentos
 
@@ -23,9 +23,25 @@ sudo vim /etc/default/docker
 export DOCKER_TMPDIR="/mnt/storage/docker-tmp"
 ```
 
+## Local das midias
+
+No arquivo '.env' estão declaradas variaveis que apontam para diretorios de midia.
+Este servidor conta com 2 HDs e portando, precisa de duas variaveis.
+
+Crie um arquivo chamado '.env' e adicione as linhas abaixo:
+```
+# caminho dos arquivos de midia e do servidor
+MEDIA_Lenny=/media/edson/ANDROID-Lenny/
+MEDIA_Famous=/media/edson/ANDROID-Famous/
+```
+A primeira linha é apenas um comentario.
+A segunda e terceira declaram os caminhos do armazenamento.
+Modifique, se necessario, o texto a partir do sinal de igual(=) para o diretorio atualizado.
+É possivel modificar o nome da variavel, e lembre-se que essas variaveis são usadas pelo Docker no arquivo 'plex.yaml' e portanto deve ser verificado para fazer as devidas modificações.
+
 ## Como rodar o Plex?
 
-Modifique, se necessario, as variaveis de caminhos das midias em `.env` e depois execute o comando abaixo no terminal:
+Execute o comando abaixo no terminal:
 
 `docker-compose up -d`
 
