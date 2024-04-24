@@ -28,16 +28,16 @@ export DOCKER_TMPDIR="/mnt/storage/docker-tmp"
 No arquivo '.env' estão declaradas variaveis que apontam para diretorios de midia.
 Este servidor conta com 2 HDs e portando, precisa de duas variaveis.
 
-Crie um arquivo chamado '.env' e adicione as linhas abaixo:
+O arquivo `.env` possui uma estrutura similar a que esta abaixo.
 ```
 # caminho dos arquivos de midia e do servidor
 MEDIA_Lenny=/media/edson/ANDROID-Lenny/
 MEDIA_Famous=/media/edson/ANDROID-Famous/
 ```
-A primeira linha é apenas um comentario.
+Onde as variaveis são colocadas uma por linha e dividida por um sinal de igual(=), que separa o nome da variavel a esquerda e seu valor. Neste caso, o caminho do dispositivo de armazenamento.
+A primeira linha é um comentario.
 A segunda e terceira declaram os caminhos do armazenamento.
-Modifique, se necessario, o texto a partir do sinal de igual(=) para o diretorio atualizado.
-É possivel modificar o nome da variavel, e lembre-se que essas variaveis são usadas pelo Docker no arquivo 'plex.yaml' e portanto deve ser verificado para fazer as devidas modificações.
+Lembre-se que ao modificar algum valor em `.env` é necessario verificar o arquivo `plex.yalm`.
 
 ## Como rodar o Plex?
 
